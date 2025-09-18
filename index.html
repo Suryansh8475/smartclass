@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Classroom & Timetable Scheduler</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-calendar-alt logo-icon"></i>
+                <div class="logo-text">Smart Scheduler</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="timetable.html">Timetable</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle">
+                <i class="fas fa-moon"></i> Night Mode
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Smart Classroom & Timetable Scheduler</h1>
+            <p>Optimize your educational institution's scheduling with our AI-powered timetable management system. Save time, reduce conflicts, and maximize resource utilization.</p>
+            <a href="timetable.html" class="cta-button">Get Started Now</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-robot feature-icon"></i>
+                    <h3>AI-Powered Scheduling</h3>
+                    <p>Our intelligent algorithm creates optimal timetables based on your constraints and preferences.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chalkboard-teacher feature-icon"></i>
+                    <h3>Classroom Management</h3>
+                    <p>Efficiently manage classroom resources, equipment, and availability all in one place.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-user-friends feature-icon"></i>
+                    <h3>Faculty Coordination</h3>
+                    <p>Easily manage faculty schedules, preferences, and avoid scheduling conflicts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Smart Scheduler</h2>
+                    <p>Smart Classroom & Timetable Scheduler is designed to address the complex scheduling challenges faced by educational institutions of all sizes.</p>
+                    <p>Our platform uses advanced algorithms to generate optimal timetables that consider classroom availability, faculty preferences, and institutional constraints.</p>
+                    <p>With our system, you can say goodbye to scheduling conflicts, underutilized resources, and the countless hours spent manually creating timetables.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Classroom scheduling visualization">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@smartscheduler.edu</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone contact-icon"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Education Street, Academic City, EC 12345</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contact-form-index">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-calendar-alt"></i>
+                        Smart Scheduler
+                    </div>
+                    <p>Optimizing educational scheduling through intelligent technology.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="timetable.html">Timetable Generator</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Subscribe to our Newsletter</h4>
+                    <p>Stay updated with our latest features and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Smart Classroom & Timetable Scheduler. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-top" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+    <button id="scroll-bottom" title="Scroll to Bottom"><i class="fas fa-arrow-down"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>

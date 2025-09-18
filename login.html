@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Smart Scheduler</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-calendar-alt logo-icon"></i>
+                <div class="logo-text">Smart Scheduler</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="timetable.html">Timetable</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="active">Login</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle">
+                <i class="fas fa-moon"></i> Night Mode
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Login / Sign Up</h1>
+                <p>Access your account or create a new one</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="auth-container">
+                    <div class="auth-tabs">
+                        <button class="tab-button active" data-tab="login">Login</button>
+                        <button class="tab-button" data-tab="signup">Sign Up</button>
+                    </div>
+
+                    <form id="login-form" class="auth-form active">
+                        <div class="form-group">
+                            <label for="login-email">Email:</label>
+                            <input type="email" id="login-email" name="email" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="login-password">Password:</label>
+                            <input type="password" id="login-password" name="password" required minlength="6">
+                            <span class="error-message"></span>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Login</button>
+                    </form>
+
+                    <form id="signup-form" class="auth-form">
+                        <div class="form-group">
+                            <label for="signup-name">Full Name:</label>
+                            <input type="text" id="signup-name" name="name" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="signup-email">Email:</label>
+                            <input type="email" id="signup-email" name="email" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="signup-password">Password:</label>
+                            <input type="password" id="signup-password" name="password" required minlength="6">
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="signup-confirm">Confirm Password:</label>
+                            <input type="password" id="signup-confirm" name="confirm-password" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-calendar-alt"></i>
+                        Smart Scheduler
+                    </div>
+                    <p>Optimizing educational scheduling through intelligent technology.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="timetable.html">Timetable Generator</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Subscribe to our Newsletter</h4>
+                    <p>Stay updated with our latest features and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Smart Classroom & Timetable Scheduler. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-top" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+    <button id="scroll-bottom" title="Scroll to Bottom"><i class="fas fa-arrow-down"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
